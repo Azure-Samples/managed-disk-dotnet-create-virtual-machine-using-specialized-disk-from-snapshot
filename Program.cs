@@ -4,8 +4,8 @@
 using Microsoft.Azure.Management.Compute.Fluent;
 using Microsoft.Azure.Management.Compute.Fluent.Models;
 using Microsoft.Azure.Management.Fluent;
-using Microsoft.Azure.Management.Resource.Fluent;
-using Microsoft.Azure.Management.Resource.Fluent.Core;
+using Microsoft.Azure.Management.ResourceManager.Fluent;
+using Microsoft.Azure.Management.ResourceManager.Fluent.Core;
 using Microsoft.Azure.Management.Samples.Common;
 using System;
 using System.Collections.Generic;
@@ -55,8 +55,8 @@ namespace CreateVirtualMachineUsingSpecializedDiskFromSnapshot
                         .WithRegion(region)
                         .WithNewResourceGroup(rgName)
                         .WithNewPrimaryNetwork("10.0.0.0/28")
-                        .WithPrimaryPrivateIpAddressDynamic()
-                        .WithNewPrimaryPublicIpAddress(publicIpDnsLabel)
+                        .WithPrimaryPrivateIPAddressDynamic()
+                        .WithNewPrimaryPublicIPAddress(publicIpDnsLabel)
                         .WithPopularLinuxImage(KnownLinuxVirtualMachineImage.UbuntuServer16_04_Lts)
                         .WithRootUsername(userName)
                         .WithRootPassword(password)
@@ -78,7 +78,7 @@ namespace CreateVirtualMachineUsingSpecializedDiskFromSnapshot
 
                 // Gets the specialized managed OS and Data disks of the virtual machine
                 //
-                var osDisk = azure.Disks.GetById(linuxVM.OsDiskId);
+                var osDisk = azure.Disks.GetById(linuxVM.OSDiskId);
                 var dataDisks = new List<IDisk>();
                 foreach (var disk in linuxVM.DataDisks.Values)
                 {
@@ -177,9 +177,9 @@ namespace CreateVirtualMachineUsingSpecializedDiskFromSnapshot
                         .WithRegion(region)
                         .WithExistingResourceGroup(rgName)
                         .WithNewPrimaryNetwork("10.0.0.0/28")
-                        .WithPrimaryPrivateIpAddressDynamic()
-                        .WithoutPrimaryPublicIpAddress()
-                        .WithSpecializedOsDisk(newOSDisk, OperatingSystemTypes.Linux)
+                        .WithPrimaryPrivateIPAddressDynamic()
+                        .WithoutPrimaryPublicIPAddress()
+                        .WithSpecializedOSDisk(newOSDisk, OperatingSystemTypes.Linux)
                         .WithExistingDataDisk(newDataDisks[0])
                         .WithExistingDataDisk(newDataDisks[1], 1, CachingTypes.ReadWrite)
                         .WithSize(VirtualMachineSizeTypes.StandardD3V2)
@@ -217,7 +217,7 @@ namespace CreateVirtualMachineUsingSpecializedDiskFromSnapshot
                 Utilities.Log("Getting OS and data disks SAS Uris");
 
                 // OS Disk SAS Uri
-                osDisk = azure.Disks.GetById(linuxVM2.OsDiskId);
+                osDisk = azure.Disks.GetById(linuxVM2.OSDiskId);
 
                 var osDiskSasUri = osDisk.GrantAccess(24 * 60);
 
@@ -260,7 +260,7 @@ namespace CreateVirtualMachineUsingSpecializedDiskFromSnapshot
 
                 var azure = Azure
                     .Configure()
-                    .WithLogLevel(HttpLoggingDelegatingHandler.Level.BASIC)
+                    .WithLogLevel(HttpLoggingDelegatingHandler.Level.Basic)
                     .Authenticate(credentials)
                     .WithDefaultSubscription();
 

@@ -4,7 +4,7 @@ platforms: .Net
 author: anuchandy
 ---
 
-#Getting Started with Managed - Create Virtual Machine Using Specialized Disk From Snapshot - in .Net #
+# Getting Started with Managed - Create Virtual Machine Using Specialized Disk From Snapshot - in .Net #
 
           Azure Compute sample for managing virtual machines -
            - Create an managed virtual machine from PIR image with data disks
