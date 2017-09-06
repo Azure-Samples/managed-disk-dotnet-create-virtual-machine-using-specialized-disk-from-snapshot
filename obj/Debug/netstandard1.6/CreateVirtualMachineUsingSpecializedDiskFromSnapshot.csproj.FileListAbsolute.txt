@@ -1,2 +1,0 @@
-C:\Sources\dotnet-samples\managed-disk-dotnet-create-virtual-machine-using-specialized-disk-from-snapshot\bin\Debug\netstandard1.6\CreateVirtualMachineUsingSpecializedDiskFromSnapshot.deps.json
-C:\Sources\dotnet-samples\managed-disk-dotnet-create-virtual-machine-using-specialized-disk-from-snapshot\obj\Debug\netstandard1.6\CreateVirtualMachineUsingSpecializedDiskFromSnapshot.csproj.CoreCompileInputs.cache
