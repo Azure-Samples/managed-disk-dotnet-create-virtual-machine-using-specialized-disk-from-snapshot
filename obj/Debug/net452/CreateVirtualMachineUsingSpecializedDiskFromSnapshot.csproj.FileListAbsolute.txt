@@ -1,4 +1,0 @@
-C:\Sources\dotnet-samples\managed-disk-dotnet-create-virtual-machine-using-specialized-disk-from-snapshot\bin\Debug\net452\CreateVirtualMachineUsingSpecializedDiskFromSnapshot.runtimeconfig.json
-C:\Sources\dotnet-samples\managed-disk-dotnet-create-virtual-machine-using-specialized-disk-from-snapshot\bin\Debug\net452\CreateVirtualMachineUsingSpecializedDiskFromSnapshot.runtimeconfig.dev.json
-C:\Sources\dotnet-samples\managed-disk-dotnet-create-virtual-machine-using-specialized-disk-from-snapshot\obj\Debug\net452\CreateVirtualMachineUsingSpecializedDiskFromSnapshot.csproj.CreateVirtualMachineUsingSpecializedDiskFromSnapshot.exe.config
-C:\Sources\dotnet-samples\managed-disk-dotnet-create-virtual-machine-using-specialized-disk-from-snapshot\obj\Debug\net452\CreateVirtualMachineUsingSpecializedDiskFromSnapshot.csproj.CoreCompileInputs.cache
