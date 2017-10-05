@@ -14,8 +14,6 @@
 developer/
 
 # Build results
-bin/
-obj/
 binaries/
 [Dd]ebug*/
 [Rr]elease/
