@@ -1,7 +1,9 @@
 ---
 page_type: sample
-languages: java
-products: azure
+languages:
+- java
+products:
+- azure
 services: Compute
 platforms: dotnet
 author: yaohaizh
@@ -26,9 +28,9 @@ Set the environment variable `AZURE_AUTH_LOCATION` with the full path for an aut
     git clone https://github.com/Azure-Samples/managed-disk-dotnet-create-virtual-machine-using-specialized-disk-from-snapshot.git
 
     cd managed-disk-dotnet-create-virtual-machine-using-specialized-disk-from-snapshot
-  
+
     dotnet build
-    
+
     bin\Debug\net452\CreateVirtualMachineUsingSpecializedDiskFromSnapshot.exe
 
 ## More information ##
