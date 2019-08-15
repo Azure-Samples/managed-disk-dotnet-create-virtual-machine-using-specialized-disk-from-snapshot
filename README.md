@@ -4,19 +4,19 @@ languages:
 - csharp
 products:
 - azure
-services: Compute
-platforms: dotnet
-author: yaohaizh
+extensions:
+- services: Compute
+- platforms: dotnet
 ---
 
 # Getting started with creating a Virtual Machine using specialized disks from Snapshots #
 
-          Azure Compute sample for managing virtual machines -
-           - Create an managed virtual machine from PIR image with data disks
-           - Create snapshot from the virtual machine's OS and data disks
-           - Create managed disks from the snapshots
-           - Create virtual machine by attaching the managed disks
-           - Get SAS Uri to the virtual machine's managed disks.
+ Azure Compute sample for managing virtual machines -
+  - Create an managed virtual machine from PIR image with data disks
+  - Create snapshot from the virtual machine's OS and data disks
+  - Create managed disks from the snapshots
+  - Create virtual machine by attaching the managed disks
+  - Get SAS Uri to the virtual machine's managed disks.
 
 
 ## Running this Sample ##
