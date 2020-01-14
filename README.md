@@ -7,19 +7,16 @@ products:
 extensions:
 - services: Compute
 - platforms: dotnet
-description: "Azure Compute sample for managing virtual machines from snapshots."
-urlFragment: getting-started-with-creating-a-virtual-machine-using-specialized-disks-from-snapshots
 ---
 
-# Create an Azure Virtual Machine with specialized disks
+# Getting started with creating a Virtual Machine using specialized disks from Snapshots #
 
-Azure Compute sample for managing virtual machines.
- 
-- Create an managed virtual machine from PIR image with data disks
-- Create snapshot from the virtual machine's OS and data disks
-- Create managed disks from the snapshots
-- Create virtual machine by attaching the managed disks
-- Get SAS Uri to the virtual machine's managed disks.
+ Azure Compute sample for managing virtual machines -
+  - Create an managed virtual machine from PIR image with data disks
+  - Create snapshot from the virtual machine's OS and data disks
+  - Create managed disks from the snapshots
+  - Create virtual machine by attaching the managed disks
+  - Get SAS Uri to the virtual machine's managed disks.
 
 
 ## Running this Sample ##
@@ -28,15 +25,13 @@ To run this sample:
 
 Set the environment variable `AZURE_AUTH_LOCATION` with the full path for an auth file. See [how to create an auth file](https://github.com/Azure/azure-libraries-for-net/blob/master/AUTH.md).
 
-```bash
-git clone https://github.com/Azure-Samples/managed-disk-dotnet-create-virtual-machine-using-specialized-disk-from-snapshot.git
+    git clone https://github.com/Azure-Samples/managed-disk-dotnet-create-virtual-machine-using-specialized-disk-from-snapshot.git
 
-cd managed-disk-dotnet-create-virtual-machine-using-specialized-disk-from-snapshot
+    cd managed-disk-dotnet-create-virtual-machine-using-specialized-disk-from-snapshot
 
-dotnet build
+    dotnet build
 
-bin\Debug\net452\CreateVirtualMachineUsingSpecializedDiskFromSnapshot.exe
-```
+    bin\Debug\net452\CreateVirtualMachineUsingSpecializedDiskFromSnapshot.exe
 
 ## More information ##
 
